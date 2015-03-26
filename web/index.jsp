@@ -17,7 +17,8 @@
         <sql:setDataSource  driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost/tiendaProducto" user="root" password="mysql" var="con"/>
         <sql:query dataSource="${con}" var="resultado">
             select * from producto;
-        </sql:query>
+        </sql:query> 
+            
             
             <ul>
             <c:forEach var="fila" items="${resultado.rows}">
